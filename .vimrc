@@ -150,14 +150,14 @@ au BufRead,BufNewFile *.elm set filetype=elm
 au BufRead,BufNewFile *.tex set filetype=tex
 
 "Text autowrap to 80 columns
-set textwidth=80
-"set wrap
-if exists('+colorcolumn')
-  set colorcolumn=+1
-else
-  highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-  match OverLength /\%>81v.\+/
-endif
+"set textwidth=80
+set wrap
+"if exists('+colorcolumn')
+"  set colorcolumn=+1
+"else
+"  highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"  match OverLength /\%>81v.\+/
+"endif
 
 set cursorline
 
